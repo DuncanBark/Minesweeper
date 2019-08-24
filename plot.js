@@ -78,7 +78,7 @@ class Plot{
 			this.flag = false;
 			image(grassImg, this.x, this.y);
 			image(flagholeImg, this.x, this.y);
-		} else if (!this.flag){
+		} else if (!this.flag && flagCount > 0){
 			image(grassImg, this.x, this.y);
 			image(flagImg, this.x, this.y);
 			flagCount--;

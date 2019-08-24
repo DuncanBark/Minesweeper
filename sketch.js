@@ -65,14 +65,14 @@ function remake(){
 
 	field = make2DArray(cols, rows);
 	createCanvas(width, height);
-	for (i = 0; i<field.length; i++){
-		for (j = 0; j<field[0].length; j++){
+	for (i = 0; i < field.length; i++){
+		for (j = 0; j < field[0].length; j++){
 			field[i][j] = new Plot(i, j, plotWidth);
 		}
 	}
 	addMines(numMines);
-	for (i = 0; i<field.length; i++){
-		for (j = 0; j<field[0].length; j++){
+	for (i = 0; i < field.length; i++){
+		for (j = 0; j < field[0].length; j++){
 			field[i][j].setNearby(field[i][j].countMines());
 			field[i][j].prelimShow();
 		}
@@ -92,8 +92,8 @@ function mousePressed(){
 }
 
 function revealAll(){
-	for (i = 0; i<field.length; i++){
-		for (j = 0; j<field[0].length; j++){
+	for (i = 0; i < field.length; i++){
+		for (j = 0; j < field[0].length; j++){
 			field[i][j].showAll();
 		}
 	}
