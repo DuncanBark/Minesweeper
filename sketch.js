@@ -85,7 +85,7 @@ function mousePressed(){
 	if ((mi >= 0 && mj >= 0) && (mi < cols && mj < rows)){
 		if (mouseButton === LEFT){
 			(field[mi][mj]).reveal();
-		} else if (mouseButton === CENTER){
+		} else if (mouseButton === RIGHT){
 			(field[mi][mj]).setflag();
 		}
 	}
